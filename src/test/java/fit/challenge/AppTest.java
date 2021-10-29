@@ -26,27 +26,27 @@ public class AppTest
     public void shouldCalculateMaxAtMagrezaLayer()
     {
         String resultado = ImcCalculator.calculate(57.92, 1.77);
-        Assert.assertEquals(resultado, "Magreza");
+        Assert.assertEquals("Magreza", resultado);
     }
 
     @Test
     public void shouldCalculateMaxAtNormalLayer()
     {
         String resultado = ImcCalculator.calculate(77.97, 1.77);
-        Assert.assertEquals(resultado, "Normal");
+        Assert.assertEquals("Normal", resultado);
     }
 
     @Test
     public void shouldCalculateMaxAtSobrepesoLayer()
     {
         String resultado = ImcCalculator.calculate(93.98, 1.77);
-        Assert.assertEquals(resultado, "Sobrepeso");
+        Assert.assertEquals("Sobrepeso", resultado);
     }
 
     @Test
     public void shouldCalculateMaxAtObesidadeLayer()
     {
         String resultado = ImcCalculator.calculate(94.00, 1.77);
-        Assert.assertEquals(resultado, "Obesidade");
+        Assert.assertEquals("Obesidade", resultado);
     }
 }
